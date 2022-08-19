@@ -2,13 +2,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("* Arquitetura von Neumann Básica - PSCF\n");
+        System.out.println("* Arquitetura von Neumann Basica - PSCF\n");
 
         // cria componentes da arquitetura
 
         IO io = new IO(System.out);
         RAM ram = new RAM(128);
-        CPU cpu = new CPU(io, ram);
+        Cache cache = new Cache(8, ram);
+        CPU cpu = new CPU(io, cache);
 
         try {
 
@@ -16,8 +17,8 @@ public class Main {
 
             final int inicio = 10;
 
-            ram.Write(inicio, 120);
-            ram.Write(inicio+1, 128);
+            ram.Write(inicio, 118);
+            ram.Write(inicio+1, 130);
 
             // executa programa
 
