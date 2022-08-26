@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CalcPI-L">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/PerformanceComputacional/src/CalcPI-L.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
