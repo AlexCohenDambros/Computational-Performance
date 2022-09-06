@@ -13,18 +13,21 @@ public class CacheLine {
 
         int kLineBits = (int) (Math.log(kLine) / Math.log(2));
         int totalCacheBits = (int) (Math.log(totalCache) / Math.log(2));
-        int totalRamBits = (int) (Math.log(totalCache) / Math.log(2));
+        int totalRamBits = (int) (Math.log(totalRam) / Math.log(2));
 
 
-        System.out.println(kLineBits + " " + totalCacheBits + " " + totalRamBits);
+        System.out.println("Numero de bits em palavras em cache line: " + kLineBits);
+        System.out.println("Numero de bits tamanho da cache:  " + totalCacheBits);
+        System.out.println("Numero de bits tamanho da RAM: " + totalRamBits);
 
-        String w = Integer.toBinaryString(x & (kLine - 1));
-        String r = Integer.toBinaryString(x >> kLineBits & (totalCache / kLine - 1));
-        String t = Integer.toBinaryString(x >> (kLineBits + (totalCacheBits - kLineBits)));
 
-        System.out.println(w);
-        System.out.println(r);
-        System.out.println(t);
+        int w = (x & (kLine - 1));
+        int r = (x >> kLineBits & (totalCache / kLine - 1));
+        int t = (x >> (kLineBits + (totalCacheBits - kLineBits)));
+
+        System.out.println("Valor de w: " + w);
+        System.out.println("Valor de r: " + r);
+        System.out.println("Valor de t: " + t);
 
 
     }
