@@ -11,6 +11,7 @@ public class CPU {
         this.es = es;
         this.mem = mem;
     }
+
     public void Run(int ender) throws EnderecoInvalido {
         PC = ender;
 
