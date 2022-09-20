@@ -1,6 +1,6 @@
 public class RAM extends Memoria {
 
-    private final int [] dados;
+    private final int[] dados;
 
     public RAM(int W) {     // W é a capacidade da memória em "words"
         super(W);
