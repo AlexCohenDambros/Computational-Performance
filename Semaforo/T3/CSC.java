@@ -7,15 +7,9 @@ public class CSC {
 	private Random rand;
 	private char empresaAtual;
 	public int nFuncionarios;
-	public Semaphore sEmpresa_A;
-	public Semaphore sEmpresa_B;
-	public Semaphore sNFuncionarios;
 
-	public CSC(Semaphore sEmpresa_A, Semaphore sEmpresa_B, Semaphore sNFuncionarios) {
+	public CSC() {
 		this.rand = new Random();
-		this.sEmpresa_A = sEmpresa_A;
-		this.sEmpresa_B = sEmpresa_B;
-		this.sNFuncionarios = sNFuncionarios;
 		this.empresaAtual = '-';
 		this.nFuncionarios = 0;
 	}
