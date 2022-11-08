@@ -26,9 +26,9 @@ public class Cache extends Memoria {
         int kWordsBits = (int) (Math.log(kWords) / Math.log(2)); // Quantidade de bits para uma palavra
         int kRowBits = (int) (Math.log(Math.ceilDiv(tamanhoCache, kWords)) / Math.log(2)); // Quantidade de bits para o R
 
-
         int w = (endereco & (kWords - 1)); // pega os primeiros bits fazendo um E lógico utilizando K
         int r = (endereco >> kWordsBits & (1 << kRowBits - 1)); //"anda" a quantidade de bits de w
+
         // Usado para fazer a 'mascara'
         /*
         Exemplo:

@@ -1,0 +1,13 @@
+
+0
+java:S1220""Move this file to a named package.
+n	java:S116"MRename this field "PC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÈ·Ÿûÿÿÿÿ8®ËÄ›µ0
+s
+java:S1450"QRemove the "PC" field and declare it as a local variable in the relevant methods.(ÆÈ·Ÿûÿÿÿÿ8¯ËÄ›µ0
+u
+java:S1450"SRemove the "regA" field and declare it as a local variable in the relevant methods.(ê²…¼şÿÿÿÿ8¯ËÄ›µ0
+u
+java:S1450"SRemove the "regB" field and declare it as a local variable in the relevant methods.(ºñ«½úÿÿÿÿ8°ËÄ›µ0
+u
+java:S1450"SRemove the "regC" field and declare it as a local variable in the relevant methods.(Ú±ôùÿÿÿÿ8°ËÄ›µ0
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–½ÓÌ8²ËÄ›µ0
